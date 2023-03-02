@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+// This is needed to add the header "Access-Control-Allow-Origin: '*'" to each request
 app.use(cors());
 app.use(bodyParser.json());
 
